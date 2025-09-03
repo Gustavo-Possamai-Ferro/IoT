@@ -10,37 +10,30 @@ Welcome to GDB Online.
 
 int main()
 {
-    float salario, desconto, soma; // Variáveis para armazenar o salário, o desconto calculado e o salário final
-    
-    // Solicita ao usuário o valor do salário
+    float salario; // Variável para armazenar o salário digitado pelo usuário
+    int codigo;    // Variável para armazenar o código do cargo
+
+    // Solicita ao usuário que digite o salário
     printf("Digite o seu salario: ");
-    scanf("%f", &salario); // Lê o valor digitado
-    
-    // Caso 1: salário até 600 → isento de desconto
-    if (salario <= 600) {
-        printf("O seu salario é %f", salario);
-    }
-    
-    // Caso 2: salário entre 600 e 1200
-    if (salario > 600 && salario <= 1200) {
-        desconto = salario * 0.20; // Calcula 20% de desconto
-        soma = salario - desconto; // Subtrai do salário
-        printf("O seu salario é %f", soma);
-    }
-    
-    // Caso 3: salário entre 1200 e 2000
-    if (salario > 1200 && salario <= 2000) {
-        desconto = salario * 0.25; // Calcula 25% de desconto
-        soma = salario - desconto;
-        printf("O seu salario é %f", soma);
-    }
-    
-    // Caso 4: salário acima de 2000
-    if (salario > 2000) {
-        desconto = salario * 0.30; // Calcula 30% de desconto
-        soma = salario - desconto;
-        printf("O seu salario é %f", soma);
-    }
-    
-    return 0; // Indica execução bem-sucedida
-}
+    scanf("%f", &salario); // Lê o salário informado pelo usuário
+
+    // Solicita ao usuário que digite o código do cargo
+    printf("Digite o seu codigo: ");
+    scanf("%d", &codigo); // Lê o código informado pelo usuário
+
+    // Estrutura condicional para verificar o código e aplicar o aumento correspondente
+    if (codigo == 1) { 
+        // Código 1 → aumento de 7%
+        salario += salario * 0.07; // Acrescenta 7% ao salário
+        printf("O seu salário com acréscimo de 7%% é: %f", salario);
+    } else if (codigo == 2) { 
+        // Código 2 → aumento de 9%
+        salario += salario * 0.09;
+        printf("O seu salário com acréscimo de 9%% é: %f", salario);
+    } else if (codigo == 3) { 
+        // Código 3 → aumento de 5%
+        salario += salario * 0.05;
+        printf("O seu salário com acréscimo de 5%% é: %f", salario);
+    } else if (codigo == 4) { 
+        // Código 4 → aumento de 12%
+        salario += sala
