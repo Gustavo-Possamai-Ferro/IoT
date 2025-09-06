@@ -22,9 +22,9 @@ int main()
     float resulmm = metros * 1000;  // Converte metros para milímetros
     
     // Exibe os resultados
-    printf("Centimetros: %.2f\n", resulcm); // <-- Corrigi formatação e \n
-    printf("Decimetros: %.2f\n", resuldc);  // <-- Nome corrigido
-    printf("Milimetros: %.2f\n", resulmm);  // <-- Nome corrigido
+    printf("Centimetros: %.2f\n", resulcm); 
+    printf("Decimetros: %.2f\n", resuldc);  
+    printf("Milimetros: %.2f\n", resulmm);  
 
     return 0; // Indica que o programa terminou 
 }
