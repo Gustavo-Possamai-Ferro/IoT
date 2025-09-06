@@ -14,7 +14,7 @@ int main()
     
     // Solicita ao usuário o valor em metros
     printf("Digite o valor em metros: ");
-    scanf("%f", &metros); // <-- Faltava o ponto e vírgula no final
+    scanf("%f", &metros); 
     
     // Calcula as conversões
     float resulcm = metros * 100;   // Converte metros para centímetros
